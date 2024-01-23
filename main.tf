@@ -10,9 +10,10 @@ module "aft" {
   ct_home_region              = var.ct_home_region
   tf_backend_secondary_region = var.tf_backend_secondary_region
 
+  aft_vpc_endpoints = false
   vcs_provider                                  = "github"
-  account_request_repo_name                     = "${var.github_username}/learn-terraform-aft-account-request"
-  account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
-  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
-  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+  account_request_repo_name                     = "${var.github_username}/sbx-terraform-aft-account-request"
+  account_provisioning_customizations_repo_name = "${var.github_username}/sbx-terraform-aft-account-provisioning-customizations"
+  global_customizations_repo_name               = "${var.github_username}/sbx-terraform-aft-global-customizations"
+  account_customizations_repo_name              = "${var.github_username}/sbx-terraform-aft-account-customizations"
 }
