@@ -30,6 +30,10 @@ module "aft" {
 
 
 
+  account_customizations_repo_branch              = "main"
+  account_provisioning_customizations_repo_branch = "main"
+  account_request_repo_branch                     = "main"
+  global_customizations_repo_branch               = "main"
   account_request_repo_name                     = "${local.github_org}/sbx-terraform-aft-account-request"
   account_provisioning_customizations_repo_name = "${local.github_org}/sbx-terraform-aft-account-provisioning-customizations"
   global_customizations_repo_name               = "${local.github_org}/sbx-terraform-aft-global-customizations"
