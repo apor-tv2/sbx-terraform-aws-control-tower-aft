@@ -20,10 +20,10 @@ module "aft" {
   terraform_distribution                          = "oss"  
 
   # Optional Feature Flags
-  aft_feature_delete_default_vpcs_enabled         = true
+  aft_feature_delete_default_vpcs_enabled         = false
   aft_feature_cloudtrail_data_events              = false
-  aft_feature_enterprise_support                  = true
-  aft_vpc_endpoints                               = false
+  aft_feature_enterprise_support                  = false
+  aft_vpc_endpoints                               = true
 
   vcs_provider                                  = "github"
 
